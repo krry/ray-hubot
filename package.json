@@ -1,5 +1,5 @@
 {
-  "name": "hosted-hubot",
+  "name": "raybot",
   "version": "2.7.1",
   "private": true,
   "author": "GitHub Inc.",
@@ -9,7 +9,7 @@
     "campfire",
     "bot"
   ],
-  "description": "A simple helpful robot for your Company",
+  "description": "A simple helpful robot for me",
   "licenses": [
     {
       "type": "MIT",
@@ -23,7 +23,22 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-irc": "^0.2.1",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0"
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "scraper": "0.0.9",
+    "cheerio": "~0.14.0",
+    "clark": "~0.0.6",
+    "cleverbot-node": "~0.1.6",
+    "flip": "~0.1.1",
+    "githubot": "~0.5.0",
+    "htmlparser": "~1.7.7",
+    "jsdom": "~0.10.4",
+    "soupselect": "~0.2.0",
+    "textspark": "~0.1.0",
+    "tumblrbot": "~0.1.0",
+    "underscore": "~1.6.0",
+    "validator": "~3.5.1",
+    "wolfram": "~0.3.0",
+    "xml2js": "~0.4.2"
   },
   "engines": {
     "node": ">= 0.8.x",
