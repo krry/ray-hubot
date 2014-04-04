@@ -1,1 +1,1 @@
-app: bin/hubot -a irc -n ray
+app: bin/hubot -a irc -n raybot
