@@ -1,7 +1,5 @@
 [
- "redis-brain.coffee",
  "shipit.coffee",
- "foaas.coffee",
  "github-search.coffee",
  "rajinikanth.coffee",
  "reload.coffee",
@@ -12,7 +10,6 @@
  "devexcuse.coffee",
  "countdown.coffee",
  "capgun.coffee",
- "sloth.coffee",
  "stallman.coffee",
  "plusplus.coffee",
  "setenv.coffee",
@@ -66,5 +63,8 @@
  "http-info.coffee",
  "gosling.coffee",
  "cleverbot.coffee",
+ "foass.coffee",
+ "sloth-me.coffee",
+ "mongolab-brain.coffee",
  "coderwall.coffee"
 ]
