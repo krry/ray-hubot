@@ -6,14 +6,12 @@ Raybot (neé Hubot) is a little quirky. A quick bio:
 * genderless, sexless, and joyless. well, not always joyless
 * born in the spring of 2014
 
-## Tricks it knows
+## Tricks
 
 While the scripts installed is bound to change, and you can always run `raybot help` to see a readout of raybot's many and changing talents, I'll try to maintain a list of its tricks and the commands it recognizes here.
 
 #### *N.B.*
 For most commands, you must prepend `raybot` to get its attention. If I've wrapped a part of the command in (parentheses), that part is optional. If it's in <angle brackets>, then it is a parameter you must specify. And if there are several pipe|separated|options, you get to pick one.
-
-## Tricks
 
 ### User Status Messages
 *Note the syntax here is a bit different for convenience. Commands take a leading forward-slash, e.g. "/s" to set your status.*
@@ -92,11 +90,15 @@ For most commands, you must prepend `raybot` to get its attention. If I've wrapp
 * `raybot card 2` - play 2 random answer cards
 
 ### Responders
-**WARNING: for power users with regex fu only**: enterting uninformed responders could kill raybot or piss everybody off
+**WARNING: for power users with regex fu only**—enterting uninformed responders could kill raybot or piss everybody off
 * `raybot responders` - List all responders
 * `raybot responder /regex pattern/` - Show a responder
 * `raybot forget /regex pattern/` - Remove a responder
 * `raybot respond /regex pattern/ msg.send(<message>)` - Create a new responder
+
+******
+
+*Below I've preserved the documentation that comes with a Hubot*
 
 ******
 
