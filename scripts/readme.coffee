@@ -17,6 +17,6 @@
 # @_kerry, github.com/krry
 
 module.exports = (robot) ->
-  robot.respond /bite me/i, (msg) ->
+  robot.respond /readme/i, (msg) ->
     msg.send "https://github.com/krry/ray-hubot/blob/master/README.md"
 
