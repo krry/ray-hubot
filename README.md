@@ -1,9 +1,9 @@
 # Raybot
 
-Raybot (neé Hubot) is a little quirky. A quick bio:
+Raybot (*neé* Hubot) is a little quirky. A quick bio:
 
 * loves coffee(script), like most hubots
-* answers to "raybot", and answers are its M.O.
+* answers to "raybot", and **answers are its M.O**.
 * playful, useful, genderless, immortal
 * born in the spring of 2014
 
