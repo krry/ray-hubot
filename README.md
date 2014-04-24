@@ -4,7 +4,7 @@ Raybot (neé Hubot) is a little quirky. A quick bio:
 
 * loves coffee(script), like most hubots
 * answers to "raybot", and answers are its M.O.
-* genderless, sexless, and joyless&mdash;well, not always joyless
+* playful, useful, genderless, immortal
 * born in the spring of 2014
 
 ## Tricks
@@ -67,7 +67,6 @@ Raybot's **great** at fetch. Just look at all the wonderful things it will get f
 * `raybot question <your question?>` - see if Wolfram can answer your question
 * `raybot md5|sha|sha1|sha256|sha512|rmd160 me <string>` - encrypt some shyt
 * `ascii me <text>` - makes ascii art of anything
-* `raybot c <input>` - talk with a cleverbot
 * `fibonacci me <number>` - what would fibonacci would say
 * `raybot poem (<number of lines>) <topic>` - compose a poem about anything
 
@@ -100,17 +99,15 @@ Raybot can take care of itself with a little instruction here and there.
 
 Raybot's got weird taste, but it sure knows how to have fun.
 
+* `raybot nick (pirate|wutang|potter|hacker|blues) <user>` - tired of boring old names? auto-nickname anyone!
 * `raybot yell <message>` - mentions everyone in the room
 * `alot`
 * `me gusta`
 * `ship it` - squirrels love it when you ship it
 * `fu <target>` - fuck-off-as-a-service
 * `go for it` - gophers know when they are needed
-* `archer|loggin|sitting down|benoit|love`
-* `raybot buscemi me <url|query>`
 * `raybot (rage) (un)flip <text>` - flip any string you say on its head
 * `calm down|simmer down|that escalated quickly|raybot calm me|raybot manatee me|<ALL CAPS>`
-* `raybot nick (pirate|wutang|potter|hacker|blues) <user>` - tired of boring old names? auto-nickname anyone!
 * `raybot encourage me|all|<user>`
 * `fear|afraid`
 * `raybot get (dirty) mitch` - who doesn't love Mitch Hedburg?
@@ -121,18 +118,20 @@ Raybot's got weird taste, but it sure knows how to have fun.
 * `raybot moarcats bomb <qty>`
 * `raybot octocat me`
 * `raybot octocat bomb me <qty>`
-* `raybot rands (<qty>)`
 * `raybot xkcd (<number>|random)`
-* `gosling|gos me` - Ryan Gosling is a very busy brogrammer
+* `raybot gosling|gos me` - Ryan Gosling is a very busy brogrammer
 * `raybot rajini (me <user>)` - channel the Chuck Norris of India
 
 ### Cards Against Humanity
+
 * `raybot q card` - draw a question card
 * `raybot card me` - play a random answer card
 * `raybot card 2` - play 2 random answer cards
 
 ### Responders
+
 **WARNING: for power users with regex fu only**—enterting uninformed responders could kill raybot or piss everybody off
+
 * `raybot responders` - List all responders
 * `raybot responder /regex pattern/` - Show a responder
 * `raybot forget /regex pattern/` - Remove a responder
@@ -143,3 +142,7 @@ Raybot's got weird taste, but it sure knows how to have fun.
 * `http(s)://<site>` - should grab the title and description of a web page, but doesn't
 * `raybot update` - because raybot lives in Heroku, it cannot `git pull` like this script would like. it can `npm update` though, so I may adapt the script to work on Heroku-hosted hubots.
 * `raybot cap <url>` - should screencap a URL via Capgun's API
+* `raybot buscemi me <url|query>` - should buscemi stuff, but blows up with a 500
+* `archer|loggin|sitting down|benoit|love` - too racy, even with SFW turned on
+* `raybot rands (<qty>)`
+* `raybot c <input>` - used to talk with cleverbot, now it just yields a 403 instead
