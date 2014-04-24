@@ -56,7 +56,6 @@ Raybot's **great** at fetch. Just look at all the wonderful things it will get f
 * `raybot youtube me <video_query>` - fetch a YouTube about something
 * `raybot weather <zip|city>` - check the weather
 * `geocode me|where is (<query>)` - find yourself, latitudinally *and* longitudinally
-* `raybot cap <url>` - screencap a URL
 * `raybot commandlinefu me (<command>)` - learn a new CLI trick
 * `raybot quakes <magnitude>|all|significant hour|day|week|month <quake qty limit>` - see what's shakin'
 * `raybot coderwall <username>` - view a coderwall profile
@@ -143,3 +142,4 @@ Raybot's got weird taste, but it sure knows how to have fun.
 
 * `http(s)://<site>` - should grab the title and description of a web page, but doesn't
 * `raybot update` - because raybot lives in Heroku, it cannot `git pull` like this script would like. it can `npm update` though, so I may adapt the script to work on Heroku-hosted hubots.
+* `raybot cap <url>` - should screencap a URL via Capgun's API
