@@ -74,6 +74,17 @@ Raybot's **great** at fetch. Just look at all the wonderful things it will get f
 * `fibonacci me <number>` - what would fibonacci would say
 * `raybot poem (<number of lines>) <topic>` - compose a poem about anything
 
+### Memory and Remembering
+
+Raybot's got a mind like a steel trap—in that it's rusty and it's waiting in the forest to ruin someone's hike.
+
+* `raybot remember <key> is <value>` - teach raybot a key and value pairing
+* `raybot what is|remember <key>` - recall the value stored in that key
+* `raybot what do you remember` - recalls all the keys and values
+* `raybot forget <key>` - removes a key-value pair
+* `raybot random memory` - returns a random string
+* `raybot what are your favorite memories?` - returns the most used key-value pairs
+
 ### Language Translation
 
 Raybot speaks all human languages, and many inhuman languages.
