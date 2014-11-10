@@ -9,7 +9,7 @@
 
 module.exports = (robot) ->
   robot.respond /PING$/i, (msg) ->
-    msg.send "PONG"
+    msg.send "back atcha"
 
   robot.respond /ADAPTER$/i, (msg) ->
     msg.send robot.adapterName
