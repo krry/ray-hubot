@@ -12,8 +12,10 @@
 
 module.exports = (robot) ->
 
+  master = "krry"
+
   if process.env.HUBOT_AUTH_ADMIN?
-    robot.logger.warning 'The HUBOT_AUTH_ADMIN environment variable is set not going to load roles.coffee, you should delete it'
+    robot.logger.warning 'The HUBOT_AUTH_ADMIN environment variable is set, so roles.coffee cannot load. Consider deleting HUBOT_AUTH_ADMIN.'
     return
 
   getAmbiguousUserText = (users) ->
@@ -25,8 +27,10 @@ module.exports = (robot) ->
 
     if name is "you"
       msg.send "Who ain't I?"
+    else if name is "your master" or name is "your leader" or name is "in charge" or name is "the boss"
+      msg.send "#{master} is my supreme overlord"
     else if name is robot.name
-      msg.send "The best."
+      msg.send "The greatest and best robot in the world."
     else
       users = robot.brain.usersForFuzzyName(name)
       if users.length is 1
@@ -58,7 +62,9 @@ module.exports = (robot) ->
             msg.send "I know"
           else
             user.roles.push(newRole)
-            if name.toLowerCase() is robot.name.toLowerCase()
+            if newRole is "Caesar"
+              msg.send "Et tu brute? #{name} is now my sovereign."
+            else if name.toLowerCase() is robot.name.toLowerCase()
               msg.send "Ok, I am #{newRole}."
             else
               msg.send "Ok, #{name} is #{newRole}."
@@ -80,8 +86,11 @@ module.exports = (robot) ->
         if newRole not in user.roles
           msg.send "I know."
         else
-          user.roles = (role for role in user.roles when role isnt newRole)
-          msg.send "Ok, #{name} is no longer #{newRole}."
+          if newRole is "Caesar"
+            msg.send "Only Caesar can take what is Caesar's."
+          else
+            user.roles = (role for role in user.roles when role isnt newRole)
+            msg.send "Ok, #{name} is no longer #{newRole}."
       else if users.length > 1
         msg.send getAmbiguousUserText users
       else
