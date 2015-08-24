@@ -7,6 +7,15 @@ Raybot (*neé* Hubot) is a little quirky. A quick bio:
 * playful, useful, genderless, immortal
 * born in the spring of 2014
 
+## Help build Raybot...
+
+To improve, modify, or otherwise contribute to Raybot's glory, submit pull requests to [this Github repo](https://github.com/krry/ray-hubot).
+
+There are easy three ways to teach Raybot new tricks:
+1. Package a hubot-script as an `npm` module, require it in the `package.json`, then name it in `external-scripts.json`. [Plusplus](https://github.com/hubot-scripts/hubot-plusplus) is one that works like that.
+2. Find an existing script in the [hubot-scripts catalog](http://hubot-script-catalog.herokuapp.com/), then name it in `hubot-scripts.json`. [Gosling.coffee](https://github.com/github/hubot-scripts/blob/master/src/scripts/gosling.coffee) works this way.
+3. Write a little coffeescript and add the file to `scripts/`. [Bite me](https://github.com/krry/ray-hubot/blob/master/scripts/bite.coffee) works this way.
+
 ## Tricks
 
 ### The Fundamentals
@@ -118,7 +127,7 @@ Raybot's got weird taste, but it sure knows how to have fun.
 * `fu <target>` - fuck-off-as-a-service
 * `go for it` - gophers know when they are needed
 * `raybot (rage) (un)flip <text>` - flip any string you say on its head
-* `calm down|simmer down|that escalated quickly|raybot calm me|raybot manatee me|<ALL CAPS>`
+* `calm down|simmer down|that escalated quickly|raybot calm me|raybot manatee me`
 * `raybot encourage me|all|<user>`
 * `fear|afraid`
 * `raybot get (dirty) mitch` - who doesn't love Mitch Hedburg?

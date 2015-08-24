@@ -19,8 +19,8 @@ module.exports = (robot) ->
   robot.hear /calm down|simmer down|that escalated quickly/i, (msg) ->
     msg.send manatee()
 
-  unless process.env.HUBOT_LESS_MANATEES
-    robot.hear ///
-      (\b([A-Z]{2,}\s+)([A-Z]{2,}\s+)([A-Z]{2,})\b)|
-      (\b[A-Z]{8,}\b)
-    ///, (msg) -> msg.send manatee()
+  # unless process.env.HUBOT_LESS_MANATEES
+  #   robot.hear ///
+  #     (\b([A-Z]{2,}\s+)([A-Z]{2,}\s+)([A-Z]{2,})\b)|
+  #     (\b[A-Z]{8,}\b)
+  #   ///, (msg) -> msg.send manatee()

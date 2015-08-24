@@ -12,6 +12,7 @@
   "HUBOT_CAPGUN_TOKEN":              "a2af2f891653034fd7d55dc6d2cdd7fe",
   "HUBOT_DARK_SKY_API_KEY":          "07226c23e75a39d3e7fa5f691fdc8482",
   "HUBOT_DARK_SKY_DEFAULT_LOCATION": "San Mateo, CA",
+  "HUBOT_LESS_MANATEES":             true,
   "HUBOT_GIPHY_API_KEY":             "dc6zaTOxFJmzC",
   "HUBOT_SLACK_BOTNAME":             "raybot",
   "HUBOT_SLACK_TEAM":                "scty",
