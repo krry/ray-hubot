@@ -45,53 +45,53 @@ StaticQuotes = [
     "The Kit-Kat candy bar has the name 'Kit-Kat' imprinted into the chocolate. That robs you of chocolate!"]
 
 module.exports = (robot) ->
-  
+
   robot.respond /get( dirty)? mitch$/i, (msg) ->
     msg
       .http("http://en.wikiquote.org/wiki/Mitch_Hedberg")
       .header("User-Agent: Mitchbot for Hubot (+https://github.com/github/hubot-scripts)")
       .get() (err, res, body) ->
-        quotes = parse_html(body, "li") 
+        quotes = parse_html(body, "li")
         quote = get_quote msg, quotes
-      
-get_quote = (msg, quotes) -> 
-  
+
+get_quote = (msg, quotes) ->
+
   pottyParm = msg.match[1].replace /^\s+|\s+$/g, "" if msg.match[1] != undefined
 
-  nodeChildren = _.flatten childern_of_type(quotes[Math.floor(Math.random() * quotes.length)])
+  nodeChildren = _.flatten children_of_type(quotes[Math.floor(Math.random() * quotes.length)])
   quote = (textNode.data for textNode in nodeChildren).join ''
-  
+
   if pottyParm == "dirty"
     msg.send quote
   else
-    keep_it_clean msg, quote, (body, err) -> 
-      msg.send StaticQuotes[Math.floor(Math.random() * StaticQuotes.length)] if err 
+    keep_it_clean msg, quote, (body, err) ->
+      msg.send StaticQuotes[Math.floor(Math.random() * StaticQuotes.length)] if err
       #because potty word just sounds funny
       msg.send body.getElementsByTagName("CleanText")[0].firstChild.nodeValue.replace /(Explicit)+/g, "potty word"
 
-# Helpers   
+# Helpers
 parse_html = (html, selector) ->
   handler = new HtmlParser.DefaultHandler((() ->), ignoreWhitespace: true)
   parser  = new HtmlParser.Parser handler
-  
+
   parser.parseComplete html
   Select handler.dom, selector
-  
-childern_of_type = (root) ->
+
+children_of_type = (root) ->
   return [root] if root?.type is "text"
 
   if root?.children?.length > 0
-    return (childern_of_type(child) for child in root.children)
+    return (children_of_type(child) for child in root.children)
 
 get_dom = (xml) ->
   body = JsDom.jsdom(xml)
   throw Error("No XML data returned.") if body.getElementsByTagName("FilterReturn")[0].childNodes.length == 0
   return body
-  
-keep_it_clean = (msg, quote, cb) -> 
+
+keep_it_clean = (msg, quote, cb) ->
   msg.http("http://wsf.cdyne.com/ProfanityWS/Profanity.asmx/SimpleProfanityFilter")
     .query(Text: quote)
-    .get() (err, res, body) -> 
+    .get() (err, res, body) ->
       try
         body = get_dom body
       catch err
