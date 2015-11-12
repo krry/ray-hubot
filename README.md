@@ -60,7 +60,7 @@ Raybot's **great** at fetch. Just look at all the wonderful things it will get f
 
 * `raybot map me <location_query>` - fetch a map of somewhere
 * `raybot image me <image_query>` - fetch an image of something
-* `raybot gif me <word>` - ask Giphy.com for a gif in a jiffy
+<!-- * `raybot gif me <word>` - ask Giphy.com for a gif in a jiffy -->
 * `raybot animate me <image_query>` - fetch an animated GIF of something
 * `raybot youtube me <video_query>` - fetch a YouTube about something
 * `raybot weather <zip|city>` - check the weather

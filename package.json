@@ -9,7 +9,7 @@
     "campfire",
     "bot"
   ],
-  "description": "A simple helpful robot for me",
+  "description": "A simple helpful raybot for SolarCity",
   "licenses": [
     {
       "type": "MIT",
@@ -33,14 +33,13 @@
     "hubot-scripts": "~2.5.11",
     "hubot-slack": "^2.2.0",
     "jsdom": "~0.10.4",
-    "mongodb": "^1.4.0",
+    "mongodb": "^2.0.32",
     "scraper": "0.0.9",
     "soupselect": "~0.2.0",
     "textspark": "~0.1.0",
     "tumblrbot": "~0.1.0",
     "underscore": "~1.6.0",
     "validator": "~3.5.1",
-    "wolfram": "~0.3.0",
     "xml2js": "~0.4.2"
   },
   "engines": {
